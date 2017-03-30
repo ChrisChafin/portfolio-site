@@ -1,0 +1,322 @@
+/*Globals here*/
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css?family=Monoton");
+/*a tags*/
+a,
+a:focus,
+a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  /*color: #9effdb;*/
+}
+
+/*a:focus,
+a:hover {
+  color: #9effdb;
+}*/
+
+
+/*base structure*/
+html,
+body {
+  height: 100%;
+}
+body {
+  text-align: center;
+  text-shadow: 3px 3px 1px rgba(0,0,0,.5);
+  color: #FFFFFF;
+  /*color: #9effdb;*/
+  /*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.8rem;
+}
+
+h2 {
+	/*font-family: 'CoreCircus', sans-serif;*/
+	/*font-size: 14vw;*/
+	text-align: center;
+	/*line-height: 1;
+	margin: 0;
+	top: 50%;
+	left: 50%;*/
+	/*transform: translate(-50%, -50%);
+	position: absolute;*/
+	/*color: rgba(45,45,45,1);*/
+	letter-spacing: .01rem;
+}	
+h2:before {
+    content: attr(data-heading);
+    position: absolute;
+    overflow: hidden;
+    color: #ffcc00;
+    width: 100%;
+    z-index: 5;
+    text-shadow: none;
+    left: 7.6523%;
+    text-align: left;
+    animation: flicker 3s linear infinite;
+}
+
+p {
+	text-align: center;
+	text-shadow: 3px 3px 1px rgba(0,0,0,.5);
+  color: #FFFFFF;
+  /*color: #9effdb;*/
+	/*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+	font-size: 1.2rem;
+}
+
+/*For displaying text on top of images*/
+/*Slaps on a dark gradient for the text to sit on top of*/
+.darken {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    )
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar-default.transparent {
+  background-color: transparent;
+}
+
+.page-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*header*/
+.masterhead-logo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*puts the <li> elements on the same line*/
+.masterhead-nav > li {
+	display: inline-block;
+}
+
+.masterhead-nav > li + li {
+	margin-right: 20px;
+	margin-left: 10px;
+	padding-left: 5px;
+}
+
+.masterhead-nav > li + a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+/*will change these colors in a bit*/
+.masterhead-nav > li > a:hover,
+.masterhead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masterhead-nav > .active > a,
+.masterhead-nav > .active > a:hover,
+.masterhead-nav > .active > a:focus {
+  border-bottom-color: #fff;
+}
+
+/*places logo inline and to the left of the nav buttons*/
+@media (min-width: 768px) {
+	.masterhead-logo {
+		float: left;
+	}
+}
+
+/*footer*/
+.masterfoot{
+  color: #999; /* IE8 proofing */
+  font-size: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+.masterfoot-nav > li{
+/*puts the <li> elements on the same line*/
+	display: inline-block;
+  color: #FFFFFF;
+	font-size: 1.2em;
+}
+
+/*site-wrapper and all the other table variables*/
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+    min-height: 100%;
+/*    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+            box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.inner{
+  padding: 15px;
+}
+
+.cover {
+  padding: 0 20px;
+}
+
+ .navbar.transparent.navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4);
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+
+/*For the flicker effect*/
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		opacity: .99;
+		text-shadow: -1px -1px 0 rgba(#fff, .4), 1px -1px 0 rgba(#fff, .4), -1px 1px 0 rgba(#fff, .4), 1px 1px 0 rgba(#fff, .4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
+
+.sign {
+	padding-top: 30px;
+	text-align: center;
+	/*color: white;*/
+	/*font-family: sans-serif;*/
+}
+
+.animateMe {
+	/*font-size: 100px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: bold;
+	opacity: 0;
+	color: #FFD553;
+	text-shadow: 0 0 90px rgba(255, 213, 83, 1),
+               3px 3px 5px black;*/
+  /*font-size: 1.5em;*/
+  font-size: 100px;
+  color: #fff;
+  font-family: Monoton;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.animateMe > a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.animateMe a:hover {
+  color: #0033FF;
+  -webkit-animation: none;
+  animation: none;
+}
+
+/*glow for webkit*/
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0033FF, 0 0 70px #0033FF, 0 0 80px #0033FF, 0 0 100px #0033FF, 0 0 150px #0033FF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0033FF, 0 0 35px #0033FF, 0 0 40px #0033FF, 0 0 50px #0033FF, 0 0 75px #0033FF;
+  }
+}
+
+/*glow for mozilla*/
+/*glow*/
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0033FF, 0 0 70px #0033FF, 0 0 80px #0033FF, 0 0 100px #0033FF, 0 0 150px #0033FF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0033FF, 0 0 35px #0033FF, 0 0 40px #0033FF, 0 0 50px #0033FF, 0 0 75px #0033FF;
+  }
+}
+
+/*
+ * Webfont: CoreCircus by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*
+ * Webfont: CoreCircus2DDot1 by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*/
+
+@font-face {
+	font-family: 'CoreCircus2DDot1';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CoreCircus';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');
+}
+
+/*@media queries to affix and center*/
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+    /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  .masterhead {
+    position: fixed;
+    top: 0;
+  }
+  .masterfoot {
+    position: fixed;
+    bottom: 0;
+  }
+
+  /* Handle the widths */
+  .masterhead,
+  .masterfoot {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masterhead,
+  .masterfoot,
+  .page-container {
+    width: 700px;
+  }
+}
+
+@media (min-width: 100px) {
+  .masterfoot {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  #container {
+    width: 100%;
+  }
+  span {
+    font-size: 3.5em;
+  }
+}

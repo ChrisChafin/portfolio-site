@@ -1,0 +1,155 @@
+/*
+ * Globals
+ */
+ @import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+
+body {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-weight: normal;
+  color: #555;
+  background: linear-gradient(45deg, #FFFFFF, #C0C0C0, #808080) fixed;
+
+}
+a, .a,
+a:focus,
+a:hover,
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+p, .p {
+  margin-top: 0;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+li {
+  margin-top: 0;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+  text-decoration: none;
+  color: #333;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav > li {
+  font-family: 'Abril Fatface', cursive;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+/*@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}*/
+
+/*
+ * Blog name and description
+ */
+
+.resume-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.resume-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.resume-description {
+  font-size: 20px;
+  color: #555;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.resume-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.resume-body {
+  margin-top: 100px;
+}
+
+.resume-post {
+  margin-bottom: 60px;
+}
+.resume-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+  color: #281D1C;
+}
+.resume-post-meta {
+  margin-bottom: 20px;
+  color: #2A586A;
+}
+
+.header-gradient {
+  background: linear-gradient(45deg, #FFFFFF, #C0C0C0, #808080) fixed;
+}
+
+/*
+ * Footer
+ */
+
+.resume-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color:transparent;
+}
+.resume-footer p:last-child {
+  margin-bottom: 0;
+}

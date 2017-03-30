@@ -1,0 +1,120 @@
+/* CSS used here will be applied after bootstrap.css */
+.slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7, .slide8 {
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center center;
+}
+.slide1 {
+	/*bonfire*/
+	background-image:
+	    linear-gradient(
+	      rgba(0, 0, 0, 0.3),
+	      rgba(0, 0, 0, 0.3)
+	    ),
+     	url(../img/fire.jpg);
+}
+.slide2 {
+	/*concert image that for some reason AWS just hates*/
+	background-image:
+	    linear-gradient(
+	      rgba(0, 0, 0, 0.3),
+	      rgba(0, 0, 0, 0.3)
+	    ),
+     	url(http://i.imgur.com/F19edF8.jpg);
+}
+.slide3 {
+	/*Nymeria*/
+	background-image:
+	    linear-gradient(
+	      rgba(0, 0, 0, 0.3),
+	      rgba(0, 0, 0, 0.3)
+	    ),
+     	url(../img/nym.jpg);
+}
+.slide4 {
+  background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../img/unt.jpg);
+}
+.slide5 {
+  background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../img/fidelity.jpg)
+}
+.slide6 {
+  background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../img/blueprint.jpg);
+}
+.slide7 {
+	background: transparent;
+}
+.slide8 {
+	background-image: 
+		linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+        ),
+		url(https://weavingsandunpickings.files.wordpress.com/2010/11/dw512-1686.jpg)
+}
+
+/* Carousel Fade Effect */
+.carousel.carousel-fade .item {
+	-webkit-transition: opacity 1s linear;
+	-moz-transition: opacity 1s linear;
+	-ms-transition: opacity 1s linear;
+	-o-transition: opacity 1s linear;
+	transition: opacity 1s linear;
+	opacity: .5;
+}
+.carousel.carousel-fade .active.item {
+	opacity: 1;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.carousel-overlay {
+	position: absolute;
+	bottom: 100px;
+	right: 0;
+	left: 0;
+	text-shadow: 3px 3px 1px rgba(0,0,0,.5);
+	font-size: 6em;
+}
+.carousel-smaler-overlay {
+	position: absolute;
+	bottom: 100px;
+	right: 0;
+	left: 0;
+	text-shadow: 3px 3px 1px rgba(0,0,0,.5);
+	font-size: 1em;
+}
+@media (min-width: 100px) {
+	.carousel-overlay {
+		position: absolute;
+		top: 160px;
+		bottom: 0px;
+		right: 0;
+		left: 0;
+	}
+	.carousel-smaller-overlay {
+		position: absolute;
+		top: 160px;
+		bottom: 0px;
+		right: 0;
+		left: 0;
+	}
+}
