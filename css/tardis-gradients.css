@@ -1,5 +1,0 @@
-/* Gradients */
-/*.tardis-0 { background: linear-gradient(to bottom, #003B6F 20%, #001E38, #000000); }*/
-/*.tardis-0 { background: -webkit-gradient(linear, left top, left bottom, from(#003B6F), to(#000000)) fixed; }*/
-/* For contact page >>> background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,59,111,.7)), to(rgba(0,0,0,.2))) fixed;*/
-.tardis-0 { background: -webkit-gradient(linear, left top, left bottom, from(#BFBFBF), to(#494949)) fixed; }

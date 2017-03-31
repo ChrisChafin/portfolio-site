@@ -9,6 +9,9 @@ TODO:
 3. automatically handle different, non-integer style properties - e.g. size which requires 'px' suffixes
 */
 
+
+//Modified version of a cool effect I found here: http://codepen.io/ortonomy/pen/gmaZKY
+//I modified this to handle 8 letters instead of 4
 let animateCustomEase = function (duration, easing, element, property, currentValue, toValue) {
 	let d = duration,
 		 ea = easing,
